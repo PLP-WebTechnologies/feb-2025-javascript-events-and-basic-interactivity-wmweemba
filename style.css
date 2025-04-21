@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Keep padding for spacing */
+    background: #fff; /* Optional: Add a white background for the content */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the header text */
+    width: 100%; /* Ensure it spans the full width of the page */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center; /* Center-align the footer text */
+    width: 100%; /* Ensure it spans the full width of the page */
+}
+
+/* Heading Styles */
+h1, h2, h3, p {
+    color: #333;
+    margin: 10px 0; /* Add some spacing between headers */
+    align-items: center; /* Center header text */
+    text-align: center; /* Center header text */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center the text inside the button */
+    display: block; /* Make the button a block element */
+    margin: 10px auto; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-items: center; /* Center label text */
+    text-align: center; /* Center label text */
+}
+
+input, textarea {
+    width: 50%; /* Reduce the width to 50% of the container */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    display: block; /* Ensure the fields are block elements */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Image Styling */
+#resizableImage {
+    display: block; /* Make the image a block element */
+    margin: 20px auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Slider Styles */
+#imageSizeSlider {
+    width: 50%; /* Set the slider to half its current length */
+    margin: 10px auto; /* Center the slider */
+    display: block;
+}
+
+/* Media Queries for Mobile and Tablet Displays */
+@media (max-width: 768px) {
+    body {
+        width: 95%; /* Increase width for smaller screens */
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%; /* Make modal content take up more space on smaller screens */
+    }
+
+    input, textarea {
+        width: 90%; /* Make form fields take up more space on smaller screens */
+    }
+
+    #imageSizeSlider {
+        width: 90%; /* Adjust slider width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em; /* Reduce font size for headings on very small screens */
+    }
+
+    button {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    footer {
+        font-size: 12px; /* Reduce footer font size */
+    }
+}
